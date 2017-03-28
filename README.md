@@ -6,7 +6,7 @@ Because GNU netcat doesn't support `-x` proxy option, it is hard to use ssh Prox
 
 # Usage
 
-Modify `build.sh` PREFIX
+1. Modify `build.sh` PREFIX
 
 ``` bash
 # Where do you want to put nc in to
@@ -15,8 +15,8 @@ PREFIX=/usr/local
 BSD_PREFIX=/usr/local
 ```
 
-Then
+2. Then
 
 ``` bash
-bash ./build.sh
+$ bash ./build.sh
 ```
