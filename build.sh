@@ -1,7 +1,9 @@
 #!/bin/bash
 
-PREFIX=$HOME/local
-BSD_PREFIX=$HOME/local
+# Where do you want to put nc in to
+PREFIX=/usr/local
+# Your libbsd install prefix
+BSD_PREFIX=/usr/local
 
 make CFLAGS="$CFLAGS -I$BSD_PREFIX/include" LDFLAGS="$LDFLAGS -lbsd -L$BSD_PREFIX/lib"
 
