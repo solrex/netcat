@@ -3,8 +3,7 @@
 PROG=	nc
 SRCS=	netcat.c atomicio.c socks.c
 
-PKG_CONFIG ?= pkg-config
-LIBS=  `$(PKG_CONFIG) --libs libbsd` -lresolv
+LIBS=  -lresolv
 OBJS=  $(SRCS:.c=.o)
 CFLAGS=  -g -O2
 LDFLAGS=  -Wl,--no-add-needed
