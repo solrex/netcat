@@ -1456,6 +1456,7 @@ set_common_sockopts(int s, int af)
 #ifndef IPV6_TCLASS
 // Advanced API (RFC3542) (2)
 #define IPV6_TCLASS 67
+#endif
 		if (af == AF_INET6) {
 			proto = IPPROTO_IPV6;
 			option = IPV6_TCLASS;

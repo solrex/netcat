@@ -11,8 +11,9 @@ Because GNU netcat doesn't support `-x` proxy option, it is hard to use ssh Prox
 ``` bash
 # Where do you want to put nc in to
 PREFIX=/usr/local
-# Your libbsd install prefix
-BSD_PREFIX=/usr/local
+# Your libbsd dev lib install path
+BSD_LIBRARY_PATH=/lib/x86_64-linux-gnu
+BSD_INCLUDE_PATH=/usr/include
 ```
 
 2. Then
